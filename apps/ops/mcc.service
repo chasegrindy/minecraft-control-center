@@ -1,0 +1,22 @@
+[Unit]
+Description=Minecraft Control Center
+After=network-online.target mcc-crafty.service
+
+[Service]
+Type=simple
+User=mcc
+Group=mcc
+WorkingDirectory=/opt/mcc/current
+StateDirectory=mcc
+StateDirectoryMode=0700
+Environment=MCC_CRAFTY_CONFIG=/var/lib/mcc/crafty.json
+EnvironmentFile=/etc/mcc/mcc.env
+ExecStart=/usr/bin/env node apps/api/server.mjs
+NoNewPrivileges=true
+ProtectSystem=strict
+PrivateTmp=true
+UMask=0077
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

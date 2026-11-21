@@ -1,0 +1,38 @@
+{
+  "name": "minecraft-control-center",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.12.0 || >=24.0.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "api": "node apps/api/server.mjs",
+    "account": "node apps/api/account-cli.mjs",
+    "backup:offsite": "node apps/api/offsite-import.mjs",
+    "backup:restore": "node apps/api/offsite-restore.mjs",
+    "check": "tsc --noEmit",
+    "test": "node --test apps/api/*.test.mjs",
+    "build": "npm run check && vite build",
+    "release": "npm run build && node apps/ops/package-release.mjs",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.2.6",
+    "@fontsource-variable/space-grotesk": "^5.2.10",
+    "lucide-react": "^0.577.0",
+    "ol": "^10.11.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "unzipit": "2.1.1",
+    "web-push": "4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.1.4",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1"
+  }
+}

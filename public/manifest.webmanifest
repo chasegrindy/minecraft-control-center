@@ -1,0 +1,12 @@
+{
+  "id": "/",
+  "name": "Minecraft Control Center",
+  "short_name": "MCC",
+  "lang": "pl",
+  "start_url": "/?mode=live",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#101412",
+  "theme_color": "#101412",
+  "icons": [{ "src": "/favicon.png", "sizes": "64x64", "type": "image/png" }]
+}

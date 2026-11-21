@@ -1,0 +1,55 @@
+:root {
+  color-scheme: dark;
+
+  --bg: #101411;
+  --side: #131815;
+  --panel: #171d19;
+  --panel-hover: #222c25;
+  --border: #2a352e;
+  --text: #eef2ee;
+  --muted: #a0ada4;
+  --accent: #a0e3ad;
+  --accent-ink: #102217;
+  --accent-wash: #253a2c;
+  --violet: #a8a1db;
+  --gold: #e4bf8a;
+  --danger: #ffaca8;
+  --danger-surface: #362823;
+  --danger-hover: #472f2b;
+  --danger-border: #6e4c45;
+  --online: #aae9b2;
+  --online-surface: #1b3022;
+  --online-border: #395a41;
+  --offline: #e1b5aa;
+  --offline-surface: #342621;
+  --offline-border: #61433a;
+
+  --body-font: 'Inter Variable', Inter, system-ui, sans-serif;
+  --heading: 'Space Grotesk Variable', var(--body-font);
+  --mono: ui-monospace, 'Cascadia Code', monospace;
+  --text-caption: .6875rem;
+  --text-control: .75rem;
+  --text-body: .875rem;
+  --text-section: 1.125rem;
+  --text-display: clamp(1.9375rem, 3.65vw, 3.5rem);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --radius-control: 7px;
+  --radius-panel: 11px;
+  --radius-feature: 14px;
+  --radius-pill: 999px;
+  --ring-offset: 3px;
+  --ring-width: 2px;
+  --tap-size: 44px;
+  --layout-gutter: clamp(18px, 2.2vw, 36px);
+  --sidebar-width: 224px;
+  --content-width: 1510px;
+  --motion-fast: 160ms;
+  --motion-change: 250ms;
+}
